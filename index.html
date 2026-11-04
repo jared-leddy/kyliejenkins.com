@@ -86,7 +86,7 @@
                 }
                 /* Photo pinned right, full section height, left edge faded into the section background. */
                 .fade-left {
-                    @apply max-md:w-full max-md:object-cover max-md:object-[78%_bottom] max-md:[mask-image:none] [mask-image:linear-gradient(90deg,transparent_0,#000_24%)];
+                    @apply [mask-image:linear-gradient(90deg,transparent_0,#000_24%)] max-md:[mask-image:linear-gradient(180deg,transparent_0,#000_18%)];
                 }
             }
         </style>
@@ -94,15 +94,15 @@
 
     <body class="bg-cream font-sans leading-snug text-ink antialiased">
         <!-- NAV -->
-        <header class="sticky top-0 z-10 flex items-center justify-between gap-6 bg-cream px-4 py-4 md:px-9 uppercase">
+        <header class="sticky top-0 z-10 flex items-center justify-between gap-3 bg-cream px-4 py-3 uppercase md:gap-6 md:px-9 md:py-4">
             <a
                 href="#top"
-                class="logo text-3xl"
+                class="logo whitespace-nowrap text-xl md:text-3xl"
                 aria-label="Kylie Jenkins home"
                 >Kylie Jenkins</a
             >
             <nav aria-label="Primary">
-                <ul class="flex items-center gap-4 text-[.95rem] font-semibold md:gap-10">
+                <ul class="flex items-center gap-4 whitespace-nowrap text-sm font-semibold md:gap-6 md:text-[.95rem] lg:gap-10">
                     <li class="max-md:hidden">
                         <a
                             href="#attitude"
@@ -127,7 +127,7 @@
                     <li>
                         <a
                             href="#andrew"
-                            class="border-2 border-ink bg-hot px-4 py-2 font-extrabold"
+                            class="whitespace-nowrap border-2 border-ink bg-hot px-3 py-2 font-extrabold md:px-4"
                             >Meet &amp; Greet</a
                         >
                     </li>
@@ -139,17 +139,13 @@
             <!-- HERO -->
             <section
                 aria-labelledby="hero-title"
-                class="relative isolate flex items-center overflow-hidden bg-linear-to-b from-[#f8bcd2] to-[#fcdbe7] px-5 py-8 md:h-[clamp(560px,60vw,880px)] md:px-9 max-md:items-start max-md:pt-10 max-md:pb-88"
+                class="relative isolate flex items-center overflow-hidden bg-linear-to-b from-[#f8bcd2] to-[#fcdbe7] px-5 pt-10 pb-0 md:h-[clamp(560px,60vw,880px)] md:px-9 md:py-8 max-md:flex-col max-md:items-stretch"
             >
                 <img
                     src="img/kylie-jenkins-in-pink-studio-1.png"
                     alt=""
-                    class="fade-left absolute inset-y-0 right-0 -z-10 h-full w-auto max-w-none"
+                    class="fade-left -mx-5 mt-8 block aspect-4/5 h-auto w-[calc(100%+2.5rem)] max-w-none object-cover object-[80%_center] max-md:order-last md:absolute md:inset-y-0 md:right-0 md:-z-10 md:mx-0 md:mt-0 md:aspect-auto md:h-full md:w-auto"
                 />
-                <div
-                    class="absolute inset-0 -z-10 bg-linear-to-r from-[rgba(251,228,238,.8)] via-[rgba(251,228,238,.35)] to-transparent md:hidden"
-                ></div>
-
                 <div class="relative max-w-180">
                     <p class="mb-5 text-xs font-extrabold uppercase tracking-wide text-hot">
                         Kylie Jenkins • Marketing with teeth
@@ -211,12 +207,12 @@
             <section
                 id="glow-up"
                 aria-labelledby="glam-title"
-                class="relative isolate flex items-center overflow-hidden bg-linear-to-b from-[#1c0418] to-ink px-5 py-10 text-white md:h-[clamp(480px,52vw,760px)] md:px-9 max-md:items-start max-md:pb-88"
+                class="relative isolate flex items-center overflow-hidden bg-linear-to-b from-[#1c0418] to-ink px-5 pt-10 pb-0 text-white md:h-[clamp(480px,52vw,760px)] md:px-9 md:py-10 max-md:flex-col max-md:items-stretch"
             >
                 <img
                     src="img/kylie-jenkins-in-pink-studio-wearing-pink-satin-suit.png"
                     alt=""
-                    class="fade-left absolute inset-y-0 right-0 -z-10 h-full w-auto max-w-none"
+                    class="fade-left -mx-5 mt-8 block aspect-4/5 h-auto w-[calc(100%+2.5rem)] max-w-none object-cover object-[95%_center] max-md:order-last md:absolute md:inset-y-0 md:right-0 md:-z-10 md:mx-0 md:mt-0 md:aspect-auto md:h-full md:w-auto"
                 />
 
                 <div class="max-w-140">
@@ -243,7 +239,7 @@
             <section
                 id="kylie"
                 aria-labelledby="who-title"
-                class="mx-auto grid max-w-7xl items-center gap-6 px-5 py-24 md:grid-cols-[1.1fr_1fr] md:gap-14 md:px-9"
+                class="mx-auto grid max-w-7xl items-center gap-6 px-5 py-12 md:grid-cols-[1.1fr_1fr] md:py-24 md:gap-14 md:px-9"
             >
                 <img
                     src="img/kylie-jenkins-laughing-at-makeup-booth.png"
@@ -275,7 +271,7 @@
             <section
                 id="andrew"
                 aria-labelledby="closer-title"
-                class="bg-[#12050c] bg-[url('img/vintage-microphone-in-pink-sequined-light.png')] bg-cover bg-position-[75%_36%] bg-no-repeat px-5 py-24 text-white md:min-h-[clamp(280px,22vw,420px)] md:bg-position-[right_36%] md:px-9"
+                class="bg-[#12050c] bg-[url('img/vintage-microphone-in-pink-sequined-light.png')] max-md:bg-[linear-gradient(90deg,rgba(13,10,12,.85)_0%,rgba(13,10,12,.3)_100%),url('img/vintage-microphone-in-pink-sequined-light.png')] bg-cover bg-position-[75%_36%] bg-no-repeat px-5 py-14 text-white md:py-24 md:min-h-[clamp(280px,22vw,420px)] md:bg-position-[right_36%] md:px-9"
             >
                 <h2
                     id="closer-title"
@@ -294,7 +290,7 @@
 
         <!-- FOOTER -->
         <footer
-            class="flex flex-wrap items-center justify-between gap-4 border-t border-[#2a1a22] bg-ink px-5 py-12 text-white"
+            class="flex flex-wrap items-center justify-between gap-4 border-t border-[#2a1a22] bg-ink px-5 py-8 text-white md:py-12"
         >
             <span class="logo text-lg">Kylie Jenkins</span>
             <p class="text-xs opacity-85">Independent parody. Kylie is fictional. Not Andrew's official website.</p>
