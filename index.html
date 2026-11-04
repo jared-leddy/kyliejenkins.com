@@ -1,0 +1,269 @@
+<!doctype html>
+<html
+    lang="en"
+    class="scroll-smooth motion-reduce:scroll-auto"
+>
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1"
+        />
+        <title>Kylie Jenkins — Marketing with Teeth</title>
+        <meta
+            name="description"
+            content="All attitude. All business. Kylie Jenkins: marketing with teeth. Independent parody."
+        />
+        <link
+            rel="preconnect"
+            href="https://fonts.googleapis.com"
+        />
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800;900&display=swap"
+            rel="stylesheet"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <style type="text/tailwindcss">
+            @theme {
+                --color-hot: #ff1493;
+                --color-ink: #0d0a0c;
+                --color-cream: #fbf3ee;
+                --font-sans: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+            }
+
+            /* Shared pieces used more than once. Edit here to change every instance. */
+            @layer components {
+                .btn {
+                    @apply inline-block border-2 border-ink bg-hot px-7 py-4 font-extrabold tracking-tight text-ink transition hover:-translate-x-[3px] hover:-translate-y-[3px] hover:shadow-[5px_5px_0_var(--color-ink)] focus-visible:outline-3 focus-visible:outline-offset-4 focus-visible:outline-ink motion-reduce:transition-none;
+                }
+                .headline {
+                    @apply font-black leading-[.95] tracking-[-0.045em];
+                }
+                .caption {
+                    @apply mt-3 text-base font-extrabold uppercase tracking-wide text-hot md:text-xl;
+                }
+                .logo {
+                    @apply origin-left scale-x-[.92] font-black uppercase leading-none tracking-[-0.06em];
+                }
+                /* Photo pinned right, full section height, left edge faded into the section background. */
+                .fade-left {
+                    @apply max-md:w-full max-md:object-cover max-md:object-[78%_bottom] max-md:[mask-image:none] [mask-image:linear-gradient(90deg,transparent_0,#000_24%)];
+                }
+            }
+        </style>
+    </head>
+
+    <body class="bg-cream font-sans leading-snug text-ink antialiased">
+        <!-- NAV -->
+        <header class="sticky top-0 z-10 flex items-center justify-between gap-6 bg-cream px-4 py-4 md:px-9 uppercase">
+            <a
+                href="#top"
+                class="logo text-3xl"
+                aria-label="Kylie Jenkins home"
+                >Kylie Jenkins</a
+            >
+            <nav aria-label="Primary">
+                <ul class="flex items-center gap-4 text-[.95rem] font-semibold md:gap-10">
+                    <li class="max-md:hidden">
+                        <a
+                            href="#attitude"
+                            class="hover:text-hot"
+                            >The attitude</a
+                        >
+                    </li>
+                    <li class="max-md:hidden">
+                        <a
+                            href="#glow-up"
+                            class="hover:text-hot"
+                            >The glow-up</a
+                        >
+                    </li>
+                    <li class="max-md:hidden">
+                        <a
+                            href="#kylie"
+                            class="hover:text-hot"
+                            >Meet Kylie</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#andrew"
+                            class="border-2 border-ink bg-hot px-4 py-2 font-extrabold"
+                            >Meet &amp; Greet</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="top">
+            <!-- HERO -->
+            <section
+                aria-labelledby="hero-title"
+                class="relative isolate flex items-center overflow-hidden bg-linear-to-b from-[#f8bcd2] to-[#fcdbe7] px-5 py-8 md:h-[clamp(560px,60vw,880px)] md:px-9 max-md:items-start max-md:pt-10 max-md:pb-88"
+            >
+                <img
+                    src="img/kylie-jenkins-in-pink-studio-1.png"
+                    alt=""
+                    class="fade-left absolute inset-y-0 right-0 -z-10 h-full w-auto max-w-none"
+                />
+                <div
+                    class="absolute inset-0 -z-10 bg-linear-to-r from-[rgba(251,228,238,.8)] via-[rgba(251,228,238,.35)] to-transparent md:hidden"
+                ></div>
+
+                <div class="relative max-w-180">
+                    <p class="mb-5 text-xs font-extrabold uppercase tracking-wide text-hot">
+                        Kylie Jenkins • Marketing with teeth
+                    </p>
+                    <h1
+                        id="hero-title"
+                        class="headline mb-6 text-[clamp(3.5rem,8vw,7rem)] capitalize"
+                    >
+                        All attitude. <span class="text-hot">All business.</span>
+                    </h1>
+                    <p class="mb-8 max-w-[22em] text-[clamp(1rem,1.6vw,1.3rem)]">
+                        High standards. Sharp strategy. Zero fucking apologies.
+                    </p>
+                    <a
+                        href="#glow-up"
+                        class="btn"
+                        >Give My Business a Glow-Up</a
+                    >
+                </div>
+            </section>
+
+            <!-- THE ATTITUDE -->
+            <section
+                id="attitude"
+                aria-labelledby="attitude-title"
+                class="mx-auto max-w-7xl px-5 py-10 md:px-9 md:py-16"
+            >
+                <h2
+                    id="attitude-title"
+                    class="headline mb-4 text-[clamp(2.2rem,5.2vw,4.4rem)]"
+                >
+                    Pretty is easy. Unforgettable takes attitude.
+                </h2>
+                <p class="text-lg">Look the part. Own the room. Give people a reason to choose you.</p>
+
+                <div class="mt-8 grid gap-5 md:grid-cols-[1.65fr_1fr]">
+                    <figure>
+                        <img
+                            src="img/kylie-jenkins-pink-promo-products.png"
+                            alt="Pink Kylie Jenkins branded sign, business cards, perfume and a disco ball"
+                            loading="lazy"
+                            class="h-72 w-full object-cover md:h-[min(40vw,600px)]"
+                        />
+                        <figcaption class="caption">A brand with backbone.</figcaption>
+                    </figure>
+                    <figure>
+                        <img
+                            src="img/kylie-jenkins-in-pink-studio-2.png"
+                            alt="Black and white portrait of Kylie with pink lips and statement earrings"
+                            loading="lazy"
+                            class="h-72 w-full object-cover object-[65%_center] md:h-[min(40vw,600px)]"
+                        />
+                        <figcaption class="caption">A presence that pays.</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <!-- THE GLOW-UP -->
+            <section
+                id="glow-up"
+                aria-labelledby="glam-title"
+                class="relative isolate flex items-center overflow-hidden bg-linear-to-b from-[#1c0418] to-ink px-5 py-10 text-white md:h-[clamp(480px,52vw,760px)] md:px-9 max-md:items-start max-md:pb-88"
+            >
+                <img
+                    src="img/kylie-jenkins-in-pink-studio-wearing-pink-satin-suit.png"
+                    alt=""
+                    class="fade-left absolute inset-y-0 right-0 -z-10 h-full w-auto max-w-none"
+                />
+
+                <div class="max-w-140">
+                    <h2
+                        id="glam-title"
+                        class="headline mb-7 text-[clamp(2.8rem,6.4vw,5.5rem)] text-cream"
+                    >
+                        A little glam. A lot of give-a-damn.
+                    </h2>
+                    <ul class="mb-8 space-y-2 text-xl">
+                        <li><strong class="font-extrabold text-hot">Stand out.</strong> Make them look.</li>
+                        <li><strong class="font-extrabold text-hot">Speak up.</strong> Make it matter.</li>
+                        <li><strong class="font-extrabold text-hot">Show up.</strong> Make it count.</li>
+                    </ul>
+                    <a
+                        href="#andrew"
+                        class="btn border-hot hover:shadow-[5px_5px_0_#fff]"
+                        >Turn Up the Volume</a
+                    >
+                </div>
+            </section>
+
+            <!-- WHO IS KYLIE -->
+            <section
+                id="kylie"
+                aria-labelledby="who-title"
+                class="mx-auto grid max-w-7xl items-center gap-6 px-5 py-24 md:grid-cols-[1.1fr_1fr] md:gap-14 md:px-9"
+            >
+                <img
+                    src="img/kylie-jenkins-laughing-at-makeup-booth.png"
+                    alt="Kylie laughing at a makeup vanity with a pink handbag"
+                    loading="lazy"
+                    class="aspect-4/3 w-full object-cover"
+                />
+                <div>
+                    <p class="mb-4 font-semibold italic text-hot">Apparently, we're committing to the bit.</p>
+                    <h2
+                        id="who-title"
+                        class="headline mb-5 text-[clamp(2.4rem,5vw,4.2rem)]"
+                    >
+                        Who the hell is Kylie?
+                    </h2>
+                    <p class="mb-7 max-w-[24em] text-[1.1rem]">
+                        Andrew joked about changing his name to Kyle, and since his middle name is Lee, he became Kylie.
+                        Someone bought KylieJenkins.com. Things escalated. A few times.
+                    </p>
+                    <a
+                        href="#andrew"
+                        class="btn"
+                        >Meet the Man Behind the Joke</a
+                    >
+                </div>
+            </section>
+
+            <!-- CLOSER -->
+            <section
+                id="andrew"
+                aria-labelledby="closer-title"
+                class="bg-[#12050c] bg-[url('img/vintage-microphone-in-pink-sequined-light.png')] bg-cover bg-position-[75%_36%] bg-no-repeat px-5 py-24 text-white md:min-h-[clamp(280px,22vw,420px)] md:bg-position-[right_36%] md:px-9"
+            >
+                <h2
+                    id="closer-title"
+                    class="headline mb-6 max-w-[12em] text-[clamp(2.4rem,5.6vw,4.8rem)]"
+                >
+                    The name is a joke. <span class="text-hot">The marketing isn't.</span>
+                </h2>
+                <a
+                    href="#andrew"
+                    class="btn border-hot hover:shadow-[5px_5px_0_#fff]"
+                    >I&apos;m Ready to Meet Andrew</a
+                >
+                <small class="mt-3 block text-sm">Tell him Kylie sent you.</small>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer
+            class="flex flex-wrap items-center justify-between gap-4 border-t border-[#2a1a22] bg-ink px-5 py-12 text-white"
+        >
+            <span class="logo text-lg">Kylie Jenkins</span>
+            <p class="text-xs opacity-85">Independent parody. Kylie is fictional. Not Andrew's official website.</p>
+        </footer>
+    </body>
+</html>
